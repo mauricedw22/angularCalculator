@@ -1,0 +1,57 @@
+
+<h2> Quadratic Calculator </h2>
+
+<img src="images/quadFormula.jpg" style="width:40%;margin-left:30%;height:200px;">
+
+<br /><br />
+
+<form role="form">
+
+<div class="form-group">
+
+ <div class="row">
+ 
+   <div class="col-md-3">
+    <label for="number1"> A Coefficient </label>
+     <input data-ng-model="a" id="number1" class="form-control" type="text" /><!-- <button class="btn btn-success" data-ng-click="percent1()">%</button><button class="btn btn-info" data-ng-click="pi1()">&pi;</button> -->
+   </div>
+   
+    <div class="col-md-3"> 
+    <label for="number2"> B Coefficient</label>   
+     <input data-ng-model="b" id="number2" class="form-control" type="text" /><!-- <button class="btn btn-success" data-ng-click="percent2()">%</button><button class="btn btn-info" data-ng-click="pi2()">&pi;</button> -->
+   </div>
+   
+   <div class="col-md-3"> 
+    <label for="number2"> C Constant</label>   
+     <input data-ng-model="c" id="number3" class="form-control" type="text" /><!-- <button class="btn btn-success" data-ng-click="percent2()">%</button><button class="btn btn-info" data-ng-click="pi2()">&pi;</button> -->
+   </div>
+   
+   <div class="col-md-3" style="text-align:center;">
+	 <button class="btn btn-info" data-ng-click="answer()">Get Answer</button><br /><button class="btn btn-warning" data-ng-click="clear()">Clear Input</button> 
+   </div>
+  
+ </div>
+ 
+ </div>
+
+</form>
+
+{{ test }}
+
+<br />
+
+{{ test2 }}
+
+<br />
+
+{{ testb }}
+
+<br />
+
+{{ testSQRT }}
+
+<br /><br />
+
+<div ng-hide="answerArea" style="text-align:center;"><strong> x<sub>1</sub> = {{ x1 }} <br /> x<sub>2</sub> = {{ x2 }} </strong></div>
+
+<br /><Br />

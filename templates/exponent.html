@@ -1,0 +1,34 @@
+
+<h2> Exponents and Roots Calculator </h2>
+
+<form role="form">
+
+<div class="form-group">
+
+ <div class="row">
+ 
+   <div class="col-md-5">
+    <label for="number1"> Number </label>
+     <input data-ng-model="num1" id="number1" class="form-control" type="text" /><button class="btn btn-success" data-ng-click="percent1()">%</button><button class="btn btn-info" data-ng-click="pi1()">&pi;</button>
+   </div>
+   
+   <div class="col-md-2" style="text-align:center;">
+	 <button class="btn btn-info" data-ng-click="answer()">Get Answer</button><br /><button class="btn btn-warning" data-ng-click="clear()">Clear Input</button> 
+   </div>
+   
+   <div class="col-md-5"> 
+    <label for="number2"> Exponent/Power</label>   
+     <input data-ng-model="num2" id="number2" class="form-control" type="text" /><button class="btn btn-success" data-ng-click="percent2()">%</button><button class="btn btn-info" data-ng-click="pi2()">&pi;</button>
+   </div>
+  
+  </div>
+ 
+ </div>
+
+</form>
+
+<br /><br />
+
+<div ng-hide="answerArea" style="text-align:center;"> Answer is {{ total }} <br /> <button class="btn btn-warning" data-ng-click="useAnswer()"> Use Answer </button></div>
+
+<br /><Br />
